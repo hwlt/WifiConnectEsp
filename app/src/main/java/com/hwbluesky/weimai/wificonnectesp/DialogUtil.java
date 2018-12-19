@@ -28,7 +28,7 @@ public class DialogUtil {
         if(!TextUtils.isEmpty(message)){
             builder.setMessage(message);
         }
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
