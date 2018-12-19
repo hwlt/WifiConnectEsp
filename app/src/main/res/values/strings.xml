@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WiFi</string>
+
+    <string name="title">WiFi Configurator</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_version">v1.0</string>
+    <string name="tvApSsidTitle">SSID: </string>
+    <string name="tvPasswordTitle">Password: </string>
+    <string name="switchIsSsidHiddenTitle">SSID is Hidden</string>
+    <string name="spinnerTaskResultCountTitle">Task result count</string>
+    <string name="btnConfirmTitle">Connect</string>
+    <string name="no_wifi">Please connect your phone to WiFi first.</string>
+</resources>

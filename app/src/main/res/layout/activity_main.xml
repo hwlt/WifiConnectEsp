@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hwbluesky.weimai.wificonnectesp.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_width"
+            android:background="@color/app_blue"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/large_padding"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginTop="@dimen/normal_margin"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:src="@mipmap/ic_logo_blue"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/label_height_large"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvApSsid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tvApSsidTitle"
+                android:textSize="@dimen/input_text_size"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/tvApSssidConnected"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_gravity="center_vertical"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:maxLength="31"
+                android:textSize="@dimen/input_text_size"
+                android:textCursorDrawable="@drawable/cursor_blue"
+                android:background="#00FFFFFF"
+                tools:ignore="TextFields" />
+
+        </LinearLayout>
+        <!--<EditText-->
+            <!--android:id="@+id/tvApSssidConnected"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textSize="@dimen/large_text_size"-->
+            <!--android:maxLines="1"/>-->
+
+        <TextView
+            android:id="@+id/tvNoWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/normal_text_size"
+            android:text="@string/no_wifi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_height_large"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvApPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tvPasswordTitle"
+            android:textSize="@dimen/input_text_size"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/edtApPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_gravity="center_vertical"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLines="1"
+            android:text=""
+            android:maxLength="31"
+            android:textSize="@dimen/input_text_size"
+            android:textCursorDrawable="@drawable/cursor_blue"
+            android:background="#00FFFFFF"
+            tools:ignore="TextFields" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:text="@string/btnConfirmTitle"
+        android:textSize="@dimen/large_text_size"
+        android:textColor="@color/white"
+        android:background="@drawable/round_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:text="@string/app_version"
+            android:textSize="@dimen/normal_text_size"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>
